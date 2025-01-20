@@ -8,6 +8,25 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 return Scaffold(
+appBar: PreferredSize(
+     preferredSize: Size.fromHeight(100.0), //width and height 
+          // The size the AppBar would prefer if there were no other constraints.
+     child: SafeArea(
+       child: Container(
+         height: 120,
+         color: const Color.fromARGB(255, 0, 0, 0),
+         child: Center(
+          child: Image.asset(
+          'assets/images/logo.png',
+          width: 150,
+          height: 100,
+          fit: BoxFit.contain,
+        ),
+        ),
+       ),
+     ),
+),
+
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
