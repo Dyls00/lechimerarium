@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import '../widgets/table.dart';
 
-class Stockage extends StatelessWidget {
-  const Stockage({super.key});
+class Evenements extends StatelessWidget {
+  const Evenements({super.key});
 
   @override
   Widget build(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width; // Largeur de l'écran
+    double screenWidth = MediaQuery.of(context).size.width; 
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
@@ -55,7 +55,7 @@ class Stockage extends StatelessWidget {
               ),
               child: Center(
                 child: Text(
-                  'Stockage',
+                  'Evenements',
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
               ),

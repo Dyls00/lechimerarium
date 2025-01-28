@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'stockage/Stockage.dart';
 import 'materiel/materiel.dart';
+import 'evenement/evenements.dart';
+import 'plus/plus.dart';
 import 'navigationbar.dart';
 
 class HomePage extends StatefulWidget {
@@ -16,8 +18,8 @@ class _HomePageState extends State<HomePage> {
   final List<Widget> _pages = [
     Stockage(),
     Materiel(),
-    Scaffold(body: Center(child: Text('Événements'))),
-    Scaffold(body: Center(child: Text('Plus'))),
+    Evenements(),
+    Plus(),
   ];
 
   @override

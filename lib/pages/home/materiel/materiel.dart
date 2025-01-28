@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../stockage/stockage.dart';
+import '../widgets/table.dart';
 
 class Materiel extends StatelessWidget {
   const Materiel({super.key});
@@ -7,7 +7,7 @@ class Materiel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width; // Largeur de l'écran
-return Scaffold(
+    return Scaffold(
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
@@ -55,7 +55,7 @@ return Scaffold(
               ),
               child: Center(
                 child: Text(
-                  'Stockage',
+                  'Materiels',
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
               ),
@@ -69,7 +69,7 @@ return Scaffold(
           left: 0,
           right: 0,
           child: Center(
-            child: Stockage(),
+            child: Table(),
           ),
         ),
         ],
