@@ -69,7 +69,7 @@ class Stockage extends StatelessWidget {
           left: 0,
           right: 0,
           child: Center(
-            child: Table(),
+            child: Thetable(),
           ),
         ),
         ],
